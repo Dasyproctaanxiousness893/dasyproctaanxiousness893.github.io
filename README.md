@@ -1,7 +1,7 @@
 ## 🌐 Live Demo
 
 You can check out the live version of my portfolio here:
-👉 **[https://mohamedawad413.github.io](https://mohamedawad413.github.io)*
+ **[https://mohamedawad413.github.io](https://mohamedawad413.github.io)*
 
 ---
 
