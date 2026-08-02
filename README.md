@@ -11,37 +11,26 @@
 
 ## 📖 About The Project
 
-Welcome to my personal portfolio repository! This project showcases my skills, background, and projects as a developer. Built with modern web technologies, it serves as a centralized hub for visitors and potential collaborators to learn more about my work.
+Welcome to my personal data engineering portfolio repository! This project highlights my expertise in designing scalable data pipelines, ETL/ELT processes, and modern big data architectures. Built with clean web technologies, it serves as a centralized hub to showcase my technical background and projects to potential collaborators and employers.
 
 ---
 
-## 🛠️ Built With
+## 🛠️ Tech Stack & Skills
 
-* **HTML5** / **CSS3** / **JavaScript**
-* **GitHub Pages** (for deployment and hosting)
-
----
-
-## ✨ Features
-
-* 📱 **Fully Responsive Design:** Optimized for mobile, tablet, and desktop screens.
-* ⚡ **Fast Performance:** Clean and lightweight code structure.
-* 🎨 **Modern UI/UX:** Sleek and professional aesthetic tailored for developers.
+* **Languages:** Python, SQL
+* **Big Data & Processing:** PySpark, Databricks
+* **Orchestration:** Apache Airflow
+* **Data Transformation:** dbt
+* **Streaming & Messaging:** Apache Kafka
+* **DevOps & Tools:** Docker, Git, PostgreSQL
+* **Hosting:** GitHub Pages
 
 ---
 
 ## 🌐 Live Demo
 
 You can check out the live version of my portfolio here:
-👉 **[https://mohamedawad413.github.io](https://mohamedawad413.github.io)**
-
----
-
-## 📬 Connect With Me
-
-If you'd like to get in touch, discuss a project, or collaborate, feel free to reach out:
-
-* **GitHub:** [@mohamedawad413](https://github.com/mohamedawad413)
+👉 **[https://mohamedawad413.github.io](https://mohamedawad413.github.io)*
 
 ---
 
