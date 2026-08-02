@@ -6,14 +6,14 @@
 }
 
 body {
-    background: #030712;
+    background: #020617;
     color: #f1f5f9;
     line-height: 1.6;
     overflow-x: hidden;
     position: relative;
 }
 
-/* --- Advanced Background Animation (خلفية متحركة متطورة) --- */
+/* --- الخلفية المتحركة لإظهار الشفافية --- */
 .bg-animation {
     position: fixed;
     top: 0;
@@ -23,70 +23,61 @@ body {
     overflow: hidden;
     z-index: -1;
     pointer-events: none;
-    background: radial-gradient(circle at 50% 50%, #0f172a 0%, #030712 100%);
+    background: linear-gradient(135deg, #090d16 0%, #0f172a 100%);
 }
 
-/* دوائر مضيئة متحركة في الخلفية */
+/* دوائر مضيئة متحركة وخلفية ملونة لتظهر الشفافية فوقها بوضوح */
 .bg-animation .glow-circle {
     position: absolute;
-    width: 400px;
-    height: 400px;
-    background: rgba(14, 165, 233, 0.08);
+    width: 450px;
+    height: 450px;
+    background: rgba(14, 165, 233, 0.25);
     border-radius: 50%;
-    filter: blur(80px);
-    animation: floatGlow 10s ease-in-out infinite alternate;
+    filter: blur(100px);
+    animation: floatGlow 8s ease-in-out infinite alternate;
 }
 
 .bg-animation .glow-circle:nth-child(1) {
-    top: -100px;
-    left: -100px;
-    animation-duration: 12s;
+    top: -50px;
+    left: -50px;
 }
 
 .bg-animation .glow-circle:nth-child(2) {
-    bottom: -100px;
-    right: -100px;
-    background: rgba(37, 99, 235, 0.08);
-    animation-duration: 15s;
+    bottom: -50px;
+    right: -50px;
+    background: rgba(37, 99, 235, 0.25);
+    animation-duration: 12s;
 }
 
-/* مربعات/أشكال تقنية صاعدة للأعلى */
+/* أشكال هندسية صاعدة */
 .bg-animation span {
     position: absolute;
     display: block;
-    width: 15px;
-    height: 15px;
-    background: rgba(56, 189, 248, 0.04);
-    border: 1px solid rgba(56, 189, 248, 0.15);
+    width: 20px;
+    height: 20px;
+    background: rgba(56, 189, 248, 0.1);
+    border: 1px solid rgba(56, 189, 248, 0.3);
     bottom: -150px;
-    animation: animateShapes 25s linear infinite;
-    border-radius: 3px;
+    animation: animateShapes 20s linear infinite;
+    border-radius: 4px;
 }
 
-.bg-animation span:nth-child(3) { left: 10%; width: 35px; height: 35px; animation-duration: 18s; }
-.bg-animation span:nth-child(4) { left: 25%; width: 20px; height: 20px; animation-duration: 12s; animation-delay: 2s; border-radius: 50%; }
-.bg-animation span:nth-child(5) { left: 40%; width: 45px; height: 45px; animation-duration: 20s; animation-delay: 4s; }
-.bg-animation span:nth-child(6) { left: 60%; width: 25px; height: 25px; animation-duration: 14s; animation-delay: 1s; }
-.bg-animation span:nth-child(7) { left: 75%; width: 50px; height: 50px; animation-duration: 22s; animation-delay: 3s; border-radius: 50%; }
-.bg-animation span:nth-child(8) { left: 90%; width: 30px; height: 30px; animation-duration: 16s; animation-delay: 5s; }
+.bg-animation span:nth-child(3) { left: 15%; width: 40px; height: 40px; animation-duration: 15s; }
+.bg-animation span:nth-child(4) { left: 35%; width: 25px; height: 25px; animation-duration: 10s; animation-delay: 2s; border-radius: 50%; }
+.bg-animation span:nth-child(5) { left: 55%; width: 50px; height: 50px; animation-duration: 18s; animation-delay: 4s; }
+.bg-animation span:nth-child(6) { left: 75%; width: 30px; height: 30px; animation-duration: 12s; animation-delay: 1s; }
+.bg-animation span:nth-child(7) { left: 85%; width: 60px; height: 60px; animation-duration: 22s; animation-delay: 3s; border-radius: 50%; }
 
 @keyframes floatGlow {
     0% { transform: translateY(0) scale(1); }
-    100% { transform: translateY(50px) scale(1.2); }
+    100% { transform: translateY(60px) scale(1.25); }
 }
 
 @keyframes animateShapes {
-    0% {
-        transform: translateY(0) rotate(0deg);
-        opacity: 0.8;
-    }
-    100% {
-        transform: translateY(-1100px) rotate(720deg);
-        opacity: 0;
-    }
+    0% { transform: translateY(0) rotate(0deg); opacity: 1; }
+    100% { transform: translateY(-1100px) rotate(720deg); opacity: 0; }
 }
 
-/* --- باقي التنسيقات --- */
 @keyframes fadeInUp {
     from { opacity: 0; transform: translateY(30px); }
     to { opacity: 1; transform: translateY(0); }
@@ -105,9 +96,10 @@ body {
 header {
     text-align: center;
     padding: 100px 20px;
-    background: linear-gradient(135deg, rgba(15, 23, 42, 0.9), rgba(3, 105, 161, 0.9));
-    border-bottom: 2px solid rgba(56, 189, 248, 0.3);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    background: rgba(15, 23, 42, 0.65); /* شفافة لتتفاعل مع الخلفية */
+    backdrop-filter: blur(12px);
+    border-bottom: 2px solid rgba(56, 189, 248, 0.4);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
     animation: fadeInUp 0.8s ease-out;
     position: relative;
     z-index: 1;
@@ -131,8 +123,8 @@ header h2 {
 header p {
     font-size: 16px;
     color: #e2e8f0;
-    background: rgba(15, 23, 42, 0.6);
-    border: 1px solid rgba(56, 189, 248, 0.2);
+    background: rgba(30, 41, 59, 0.5);
+    border: 1px solid rgba(56, 189, 248, 0.3);
     display: inline-block;
     padding: 8px 20px;
     border-radius: 30px;
@@ -147,14 +139,16 @@ section {
     z-index: 1;
 }
 
+/* --- تصميم الكروت بشفافية واضحة (Glassmorphism) --- */
 .card {
-    background: rgba(11, 17, 32, 0.85);
-    backdrop-filter: blur(10px);
+    background: rgba(15, 23, 42, 0.45); /* شفافة جداً ومذهلة بصرياً */
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
     padding: 30px;
     margin-bottom: 30px;
     border-radius: 16px;
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
-    border: 1px solid rgba(30, 41, 59, 0.8);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(56, 189, 248, 0.25); /* إطار مضيء خفيف يعزز الوضوح */
     transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
     animation: fadeInUp 0.6s ease-out forwards;
     opacity: 0;
@@ -166,16 +160,17 @@ section {
 .card:nth-child(4) { animation-delay: 0.8s; }
 
 .card:hover {
-    transform: translateY(-4px);
+    transform: translateY(-5px);
     border-color: #38bdf8;
-    box-shadow: 0 20px 40px rgba(56, 189, 248, 0.1);
+    box-shadow: 0 25px 50px rgba(56, 189, 248, 0.2);
+    background: rgba(15, 23, 42, 0.6);
 }
 
 h3 {
     margin-bottom: 20px;
     color: #38bdf8;
     font-size: 22px;
-    border-bottom: 2px solid rgba(30, 41, 59, 0.8);
+    border-bottom: 2px solid rgba(56, 189, 248, 0.2);
     padding-bottom: 10px;
 }
 
@@ -187,20 +182,21 @@ h3 {
 
 .skills span {
     padding: 8px 16px;
-    background: rgba(30, 41, 59, 0.5);
+    background: rgba(30, 41, 59, 0.6);
     color: #38bdf8;
-    border: 1px solid rgba(51, 65, 85, 0.8);
+    border: 1px solid rgba(56, 189, 248, 0.3);
     border-radius: 8px;
     font-size: 14px;
     font-weight: 500;
     transition: all 0.3s ease;
+    backdrop-filter: blur(4px);
 }
 
 .skills span:hover {
     background: #0284c7;
     color: white;
     border-color: #38bdf8;
-    transform: scale(1.05);
+    transform: scale(1.08);
 }
 
 .project-grid {
@@ -209,17 +205,20 @@ h3 {
 }
 
 .project {
-    background: rgba(15, 23, 42, 0.6);
+    background: rgba(30, 41, 59, 0.35);
+    backdrop-filter: blur(8px);
     padding: 20px;
     border-radius: 12px;
     border-left: 4px solid #38bdf8;
-    border: 1px solid rgba(30, 41, 59, 0.5);
+    border-top: 1px solid rgba(56, 189, 248, 0.15);
+    border-right: 1px solid rgba(56, 189, 248, 0.15);
+    border-bottom: 1px solid rgba(56, 189, 248, 0.15);
     transition: background 0.3s ease, transform 0.3s ease;
 }
 
 .project:hover {
-    background: rgba(30, 41, 59, 0.8);
-    transform: translateX(5px);
+    background: rgba(30, 41, 59, 0.6);
+    transform: translateX(6px);
 }
 
 .project h4 {
@@ -244,10 +243,11 @@ h3 {
     align-items: center;
     gap: 10px;
     background: rgba(30, 41, 59, 0.5);
+    backdrop-filter: blur(6px);
     padding: 12px 20px;
     border-radius: 10px;
     color: #38bdf8;
-    border: 1px solid rgba(51, 65, 85, 0.8);
+    border: 1px solid rgba(56, 189, 248, 0.3);
     font-weight: 500;
     transition: all 0.3s ease;
 }
@@ -255,7 +255,7 @@ h3 {
 .contact-links a:hover {
     background: #0284c7;
     color: white;
-    border-color: #0284c7;
+    border-color: #38bdf8;
 }
 
 .contact-links a:hover i {
@@ -266,7 +266,9 @@ footer {
     text-align: center;
     padding: 30px;
     color: #64748b;
-    border-top: 1px solid rgba(30, 41, 59, 0.8);
+    background: rgba(15, 23, 42, 0.5);
+    backdrop-filter: blur(10px);
+    border-top: 1px solid rgba(56, 189, 248, 0.2);
     font-size: 14px;
     position: relative;
     z-index: 1;
